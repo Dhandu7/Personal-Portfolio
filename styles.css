@@ -57,7 +57,7 @@ body{
     left:0;
     height: 100%;
     width: 100%;
-    background-color: rgb(36,164,138);
+    background-color: #41436A;
     border-left:2px solid #fff;
     animation: typing 3s steps(10) infinite;
 }
@@ -91,16 +91,16 @@ h1{
     text-shadow: 1px 1px 4px #000;
 }
 .one{
-    background-color: rgb(36,164,138);
+    background-color: #41436A;
 }
 .two{
-    background-color: rgb(211,79,79);
+    background-color: #41436A;
 }
 .three{
-    background-color: rgb(67,91,175);
+    background-color: #41436A;
 }
 .four{
-    background-color: rgb(191,64,191);
+    background-color: #41436A;
 }
 
 
