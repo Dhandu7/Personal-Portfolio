@@ -1,0 +1,94 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins&display=swap')
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display:flex;
+}
+.wrapper .static-txt{
+    color:#fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .dynamic-txts{
+    margin-left:15px;
+
+}
+
+.dynamic-txts li{
+    list-style: none;
+    color:#fff;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+}
+
+.dynamic-txts li{
+    position:relative;
+
+}
+
+.dynamic-txts li::after{
+    content: '';
+    padding: absolute;
+    left:0;
+    height: 100%;
+    width: 100%;
+    border-left:2px solid #fff;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing{
+    40%,
+    60%{
+        left:calc(100%+30px);
+    }
+    100%{
+        left:0;
+    }
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+h1{
+    color:rgb(226, 226, 226);
+    text-shadow: 1px 1px 4px #000;
+}
+.one{
+    background-color: rgb(36,164,138);
+}
+.one{
+    background-color: rgb(211,79,79);
+}
+.one{
+    background-color: rgb(67,91,175);
+}
+.one{
+    background-color: rgb(191,64,191);
+}
+
+
