@@ -10,3 +10,4 @@ document.getElementById('toggleBtn').addEventListener('click', function() {
         content.style.marginLeft = '250px';
     }
 });
+
