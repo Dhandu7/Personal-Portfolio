@@ -16,7 +16,7 @@ body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: darkslategray;
+    background-color: #6b7280;
     overflow-x: hidden;
 }
 
@@ -68,7 +68,7 @@ body{
     left:0;
     height: 100%;
     width: 100%;
-    background-color: #839cb5;
+    background-color: #6b7280;
     border-left:2px solid #fff;
     animation: typing 3s steps(10) infinite;
 }
@@ -85,7 +85,7 @@ body{
 
 .container{
     width: 100%;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     overflow-y: scroll;
     height: 100vh;
 }
@@ -93,6 +93,7 @@ body{
 section{
     height: 100vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
@@ -108,16 +109,16 @@ h1{
     text-shadow: 1px 1px 4px #000;
 }
 .one{
-    background-color: #839cb5;
+    background-color: #6b7280;
 }
 .two{
-    background-color: #353634;
+    background-color: #6b7280;
 }
 .three{
-    background-color: #353634;
+    background-color: #6b7280;
 }
 .four{
-    background-color: #353634;
+    background-color: #6b7280;
 }
 
 
@@ -143,8 +144,13 @@ button:hover {
 
 .links {
     position: fixed;
-    top: 35px; /* Same top position as the Menu button */
-    right: 50px; /* Same right position as the Menu button */
+    width:100%;
+    height: 10%;
+    background-color: #303338;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 
 .links a {
@@ -153,6 +159,7 @@ button:hover {
     display: inline-block;
     font-size: 25px; /* Adjust the font size of icons as needed */
     color: #fff;
+    text-decoration: none;
 }
 
 .links a i {
@@ -164,23 +171,22 @@ button:hover {
 }
 
 .cvButton {
+    margin: 10px;
     padding: 10px 20px; /* Adjust padding as needed */
     font-size: 16px; /* Adjust font size as needed */
-    background-color: #e6324b; /* Button background color */
+    background-color: #4dbfa6; /* Button background color */
     color: #fff; /* Button text color */
     border: none;
     border-radius: 5px; /* Adjust border radius as needed */
     cursor: pointer;
-    position: sticky;
+    position: relative;
     transition: background-color 0.3s; /* Add transition for hover effect */
-    bottom: 20px; /* Adjust the distance from the bottom */
-    left: 50%; /* Place it horizontally in the middle */
-    transform: translateX(-50%); /* Center the button horizontally */
     z-index: 1; /* Ensure the button is above other content */
 }
 
 .cvButton:hover {
-    background-color: #e6325e; /* Button background color on hover */
+    box-shadow: 0 0 25px #303338;
+    margin-top: -5px;
 }
 
 .avatar{
@@ -209,3 +215,46 @@ button:hover {
     color: white;
 }
 
+.arrow {
+    display: flex; /* Make the span an inline-block element */
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    width: 3rem;
+    height: 3rem;
+    border-left: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid #fff;
+    transform: rotate(315deg); /* Adjust the rotation to create a down-pointing arrow */
+    margin-top: 100px; /* Add some margin for spacing */
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0) rotate(315deg); /* Start and end position */
+    }
+    40% {
+        transform: translateX(-50%) translateY(-20px) rotate(315deg); /* Bounce up */
+    }
+    60% {
+        transform: translateX(-50%) translateY(-10px) rotate(315deg); /* Bounce slightly lower */
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter:blur(2px);
+    transform: translateX(-50%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform:translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition:none;
+    }
+}

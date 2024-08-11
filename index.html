@@ -11,39 +11,48 @@
 </head>
 <body>
     <div class="links">
-        <div>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#qual">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </div>
-        
+        <a href="#home">Home</a>
+        <a href="#qual">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
         <a href="https://www.linkedin.com/in/aaryan-dhand-089849296/"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Dhandu7"><i class="fab fa-github"></i></a>
         <a href="https://www.instagram.com/aaryandhand13"><i class="fab fa-instagram"></i></a>
     </div>
     <div class="container">
         <section id="home" class="one">
-            <img src="images/avatar.png" height="400px" width="400px">
-            <div class="wrapper">
-                <div class="static-txt"></div>
-                <ul class="dynamic-txts">
-                    <li><span>Hi! I'm Aaryan</span></li>
-                    <li><span>नमस्ते! मैं आर्यन हूं</span></li>
-                    <li><span>¡Hola! soy Aaryan</span></li>
-                    <li><span>Salut! Je suis Aaryan</span></li>
-                </ul>   
+            <img src="images/avatar.png" height="350px" width="350px">
+            <div style="flex-direction: column;">
+                <div class="wrapper">
+                    <div class="static-txt"></div>
+                    <ul class="dynamic-txts">
+                        <li><span>Hi! I'm Aaryan</span></li>
+                        <li><span>नमस्ते! मैं आर्यन हूं</span></li>
+                        <li><span>¡Hola! soy Aaryan</span></li>
+                        <li><span>Salut! Je suis Aaryan</span></li>
+                    </ul>   
+                </div>
+                
+                <div style="flex-direction: row;">
+                    <a href="images/Aaryan Dhand Resume 2024.pdf" download>
+                        <button class="cvButton">Download CV</button>
+                    </a>
+                    <a href="mailto:aaryandhandbusiness@gmail.com">
+                        <button class="cvButton" style="background-color: #b84b61;"> Email Me</button>
+                    </a>
+                </div>
+                
             </div>
-            
+            <span class="arrow"></span>
         </section>
         <section id="qual" class="two">
             <table>
                 <tr>
-                    <th><h1>Aaryan Dhand</h1></th>
-                    <td rowspan="3"><img src="images/avatar.png" height="200px" width="200px"></td>
+                    <th><h1 class="hidden">ABOUT ME</h1></th>
+                    <td rowspan="3"><img src="images/avatar.png" height="200px" width="200px" class="hidden"></td>
                 </tr>
                 <tr>
-                    <td class="bio">
+                    <td class="bio hidden">
                         <p>
                             I am currently a Second Year Software Engineering Student actively seeking internship opportunities in order to share my skills
                         </p>
@@ -51,9 +60,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center;">
-                        <a href="images/Aaryan Dhand Resume 2024.pdf" download>
-                            <button class="cvButton">Download CV</button>
-                        </a>
+                        
                     </td>
                 </tr>
             </table>
@@ -62,7 +69,7 @@
         </section>
 
         <section id="projects" class="three">
-            <div class="wrappercard">
+            <div class="wrappercard hidden">
                 <div class="container2">
                     <input type="radio" name="slide" id="c1" >
                     <label for="c1" class="card">
