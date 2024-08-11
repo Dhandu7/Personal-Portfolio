@@ -64,7 +64,7 @@ body{
     left:0;
     height: 100%;
     width: 100%;
-    background-color: #41436A;
+    background-color: #839cb5;
     border-left:2px solid #fff;
     animation: typing 3s steps(10) infinite;
 }
@@ -104,17 +104,18 @@ h1{
     text-shadow: 1px 1px 4px #000;
 }
 .one{
-    background-color: #41436A;
+    background-color: #839cb5;
 }
 .two{
-    background-image: linear-gradient(#41436A,#984063);
+    background-color: #353634;
 }
 .three{
-    background-image: linear-gradient(#984063,#FE9677);
+    background-color: #353634;
 }
 .four{
-    background-color: #FE9677;
+    background-color: #353634;
 }
+
 
 button {
     border: none;
@@ -128,37 +129,6 @@ button {
 
 button:hover {
     color: #ccc; /* Change text color on hover */
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: auto;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.4;
-    padding-top: 60px;
-    transition: 0.5s;
-    border-top-right-radius: 15px; /* Adjust the radius as needed */
-    border-bottom-right-radius: 15px; /* Adjust the radius as needed */
-}
-
-.navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar li {
-    padding: 15px;
-    text-align: center;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
 }
 
 .content {
@@ -192,7 +162,7 @@ button:hover {
 .cvButton {
     padding: 10px 20px; /* Adjust padding as needed */
     font-size: 16px; /* Adjust font size as needed */
-    background-color: #007bff; /* Button background color */
+    background-color: #e6324b; /* Button background color */
     color: #fff; /* Button text color */
     border: none;
     border-radius: 5px; /* Adjust border radius as needed */
@@ -206,7 +176,7 @@ button:hover {
 }
 
 .cvButton:hover {
-    background-color: #0056b3; /* Button background color on hover */
+    background-color: #e6325e; /* Button background color on hover */
 }
 
 .avatar{
@@ -231,4 +201,7 @@ button:hover {
     padding: 10px;
 }
 
+.bio p{
+    color: white;
+}
 
