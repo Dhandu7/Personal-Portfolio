@@ -298,10 +298,10 @@ button:hover {
     position: relative;
     background-color: #303338;
     z-index: 2;
-    border-radius: 35px;
-    padding:10px;
+    border-radius: 2.1875rem;
+    padding:0.625rem;
     width: 80%;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 .fuzzy-overlay {
@@ -325,4 +325,13 @@ button:hover {
 .image-glow{
     box-shadow: 0 0 25px #4dbfa6;
     border-radius: 50%;
+    position: relative;
+}
+
+.pfp{
+    position: relative;
+    border-radius: 50%;
+    height: 21.875rem;
+    width: 21.875rem;
+
 }

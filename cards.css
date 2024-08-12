@@ -35,9 +35,11 @@
     display: flex;
     align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0 px 10px 30px -5px rgba(0,0,0,0.8);
     position: relative;
+    z-index: 2;
+    background-color:#303338;
 }
+
 
 .card >.row{
      color: white;
@@ -46,7 +48,7 @@
 }
 
 .card >.row > .icon{
-    background: #223;
+    background: #303338;
     color: white;
     border-radius: 50%;
     width:50px;
@@ -72,6 +74,7 @@
 .description p {
     color: #b0b0b0;
     padding-top: 5px;
+    padding-bottom:5px;
 }
 
 .description h4 {
@@ -92,36 +95,44 @@ input:checked + label .description {
 }
 
 .card[for="c1"]{
-    background-image: url('./images/temp1.jpeg');
+    background-image: url();
 }
 
 .card[for="c2"]{
-    background-image: url('./images/temp2.jpeg');
+    background-image: url();
 }
 
 .card[for="c3"]{
-    background-image: url('./images/temp3.jpeg');
+    background-image: url();
 }
 
 .card[for="c4"]{
-    background-image: url('./images/temp1.jpeg');
+    background-image: url();
 }
 
 .card[for="c5"]{
-    background-image: url('./images/temp1.jpeg');
+    background-image: url();
 }
 
 .card button {
-    background: #223;
+    background: #303338;
     color: white;
-    font-size: 14px;
+    font-size: 2.625rem;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
-    width:50px;
-    height: 50px;
-    display: inline-block;
+    width:3.125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
     position: absolute;
   }
+
+.card button i{
+    color:#b84b61;
+}
+
+
   
   
