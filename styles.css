@@ -93,7 +93,7 @@ body{
 
 .container{
     width: 100%;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
 }
@@ -221,6 +221,32 @@ button:hover {
 
 .bio p{
     color: white;
+    font-size:20px;
+}
+
+.bio h2{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #b84b61;
+}
+
+.skillset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#4dbfa6;
+}
+
+.skillset-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.skillset-row h3{
+    font-weight: 30px;
+    color:#4dbfa6;
 }
 
 .arrow {
@@ -265,4 +291,38 @@ button:hover {
     .hidden {
         transition:none;
     }
+}
+
+.aboutme {
+    display: flex;
+    position: relative;
+    background-color: #303338;
+    z-index: 2;
+    border-radius: 35px;
+    padding:10px;
+    width: 80%;
+    margin: 10px;
+}
+
+.fuzzy-overlay {
+    position: absolute;
+    background-image: url('./images/noise1.png');
+    z-index: 5;
+    opacity:15%;
+
+    animation: shift 0.2s linear infinite both;
+}
+
+@keyframes shift {
+    0% {
+        transform: translateX(10px) translateY(10px);
+    }
+    100% {
+        transform: translateX(-10px) translateY(-10px); 
+    }
+}
+
+.image-glow{
+    box-shadow: 0 0 25px #4dbfa6;
+    border-radius: 50%;
 }

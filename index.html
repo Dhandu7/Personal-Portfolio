@@ -21,7 +21,7 @@
     </div>
     <div class="container">
         <section id="home" class="one">
-            <img src="images/avatar.png" height="350px" width="350px">
+            <img src="images/aaryan-photo.png" height="350px" width="350px" class="image-glow">
             <div style="flex-direction: column;">
                 <div class="wrapper">
                     <div class="static-txt"></div>
@@ -33,7 +33,7 @@
                     </ul>   
                 </div>
                 
-                <div style="flex-direction: row;">
+                <div style="flex-direction: row; justify-content: space-between;">
                     <a href="images/Aaryan Dhand Resume 2024.pdf" download>
                         <button class="cvButton">Download CV</button>
                     </a>
@@ -46,24 +46,52 @@
             <span class="arrow"></span>
         </section>
         <section id="qual" class="two">
-            <table>
-                <tr>
-                    <th><h1 class="hidden">ABOUT ME</h1></th>
-                    <td rowspan="3"><img src="images/avatar.png" height="200px" width="200px" class="hidden"></td>
-                </tr>
-                <tr>
-                    <td class="bio hidden">
-                        <p>
-                            I am currently a Second Year Software Engineering Student actively seeking internship opportunities in order to share my skills
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">
-                        
-                    </td>
-                </tr>
-            </table>
+            <div  class="aboutme hidden">
+                <table>
+                    <tr>
+                        <th><h1 class="hidden">ABOUT ME</h1></th>
+                        <td rowspan="3"><img src="images/aaryan-photo.png" height="200px" width="200px" class="hidden image-glow"></td>
+                    </tr>
+                    <tr>
+                        <td class="bio hidden">
+                            <br>
+                            <h2>Welcome to my portfolio!</h2>
+                            <p>
+                                I am a third-year Software Engineering student at the University of Calgary with a passion for crafting innovative and efficient software solutions. Here, you'll find a showcase of my projects, skills, and academic achievements. Dive in to explore my journey in coding, problem-solving, and tech innovation
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bio hidden">
+                            <p>
+                                Here are some of my skills:
+                            </p>
+                            <ul class="skillset">
+                                <div class="skillset-row">
+                                    <li><h3>Python</h3></li>
+                                    <li><h3>C</h3></li>
+                                </div>
+                                <div class="skillset-row">
+                                    <li><h3>C++</h3></li>
+                                    <li><h3>Java</h3></li>
+                                </div>
+                                <div class="skillset-row">
+                                    <li><h3>JS</h3></li>
+                                    <li><h3>HTML</h3></li>
+                                </div>
+                                <div class="skillset-row">
+                                    <li><h3>CSS</h3></li>
+                                    <li><h3>React</h3></li>
+                                </div>
+                                <div class="skillset-row">
+                                    <li><h3>Swift</h3></li>
+                                </div>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
                       
             
         </section>
@@ -110,6 +138,17 @@
                             <div class="icon">4</div>
                             <div class="description">
                                 <h4>Portfolio Website</h4>
+                                <p>You are currently exploring this</p>
+                            </div>
+                        </div>
+                        <button onclick="window.location.href='card1.html'">Learn More</button>
+                    </label>
+                    <input type="radio" name="slide" id="c4" checked>
+                    <label for="c5" class="card">
+                        <div class="row">
+                            <div class="icon">5</div>
+                            <div class="description">
+                                <h4>Museum Database</h4>
                                 <p>You are currently exploring this</p>
                             </div>
                         </div>

@@ -107,6 +107,10 @@ input:checked + label .description {
     background-image: url('./images/temp1.jpeg');
 }
 
+.card[for="c5"]{
+    background-image: url('./images/temp1.jpeg');
+}
+
 .card button {
     background: #223;
     color: white;
