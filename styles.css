@@ -59,6 +59,10 @@ body{
     animation: slide 12s steps(4) infinite;
 }
 
+.dynamic-txts:hover{
+    transform: scale(105%);
+}
+
 @keyframes slide{
     100%{
         top:-360px;
@@ -176,6 +180,7 @@ button:hover {
 
 .links a:hover {
     color: #ccc; /* Adjust the hover color as needed */
+    transform: scale(110%);
 }
 
 .cvButton {
@@ -193,8 +198,7 @@ button:hover {
 }
 
 .cvButton:hover {
-    box-shadow: 0 0 25px #303338;
-    margin-top: -5px;
+    transform: scale(110%);
 }
 
 .avatar{

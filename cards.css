@@ -133,6 +133,12 @@ input:checked + label .description {
     color:#b84b61;
 }
 
+.card button:hover{
+    transform: scale(110%);
+    box-shadow: 0 0 25px #fff;
+
+}
+
 
   
   
