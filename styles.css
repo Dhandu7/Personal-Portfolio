@@ -339,3 +339,7 @@ button:hover {
     width: 21.875rem;
 
 }
+
+.pfp:hover{
+    transform: scale(90%);
+}
