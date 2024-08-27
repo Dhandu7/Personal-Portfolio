@@ -39,20 +39,20 @@ body{
 }
 .wrapper .static-txt{
     color:#fff;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 400;
 }
 .wrapper .dynamic-txts{
-    margin-left:15px;
-    line-height: 90px;
-    height: 90px;
+    margin-left:0.9375rem;
+    line-height: 5.625rem;
+    height: 5.625rem;
     overflow: hidden;
 }
 
 .dynamic-txts li{
     list-style: none;
     color:#fff;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 500;
     top:0;
     position: relative;
@@ -65,7 +65,7 @@ body{
 
 @keyframes slide{
     100%{
-        top:-360px;
+        top:-22.5rem;
     }
 }
 
@@ -81,14 +81,14 @@ body{
     height: 100%;
     width: 100%;
     background-color: #6b7280;
-    border-left:2px solid #fff;
+    border-left:0.125rem solid #fff;
     animation: typing 3s steps(10) infinite;
 }
 
 @keyframes typing{
     40%,
     60%{
-        left:calc(100% + 30px);
+        left:calc(100% + 1.875rem);
     }
     100%{
         left:0;
@@ -118,7 +118,7 @@ section{
 
 h1{
     color:rgb(226, 226, 226);
-    text-shadow: 1px 1px 4px #000;
+    text-shadow: 0.0625rem 0.0625rem 0.25rem #000;
 }
 .one{
     background-color: #6b7280;
@@ -139,8 +139,8 @@ button {
     position: fixed;
     background: none; /* Set background to none or transparent */
     color: #fff; /* Set text color to white */
-    top: 50px;
-    left: 50px;
+    top: 3.125rem;
+    left: 3.125rem;
     z-index: 2;
 }
 
@@ -151,7 +151,7 @@ button:hover {
 .content {
     margin-left: 0;
     transition: margin-left 0.5s;
-    padding: 16px;
+    padding: 1rem;
 }
 
 .links {
@@ -162,14 +162,14 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 .links a {
-    margin-left: 15px; /* Same left margin as the Menu button */
-    padding: 5px; /* Same padding as the Menu button */
+    margin-left: 0.9375rem; /* Same left margin as the Menu button */
+    padding: 0.3125rem; /* Same padding as the Menu button */
     display: inline-block;
-    font-size: 25px; /* Adjust the font size of icons as needed */
+    font-size: 1.5625rem; /* Adjust the font size of icons as needed */
     color: #fff;
     text-decoration: none;
 }
@@ -184,13 +184,13 @@ button:hover {
 }
 
 .cvButton {
-    margin: 10px;
-    padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 16px; /* Adjust font size as needed */
+    margin: 0.625rem;
+    padding: 0.625rem 1.25rem; /* Adjust padding as needed */
+    font-size: 1rem; /* Adjust font size as needed */
     background-color: #4dbfa6; /* Button background color */
     color: #fff; /* Button text color */
     border: none;
-    border-radius: 5px; /* Adjust border radius as needed */
+    border-radius: 0.3125rem; /* Adjust border radius as needed */
     cursor: pointer;
     position: relative;
     transition: background-color 0.3s; /* Add transition for hover effect */
@@ -202,14 +202,14 @@ button:hover {
 }
 
 .avatar{
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .two h1{
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: bolder;
-    padding:10px;
-    margin-right: 15px;
+    padding:0.625rem;
+    margin-right: 0.9375rem;
     box-shadow: none;
 }
 
@@ -219,17 +219,17 @@ button:hover {
 
 .bio {
     text-align: center;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 1.125rem;
+    padding: 0.625rem;
 }
 
 .bio p{
     color: white;
-    font-size:20px;
+    font-size:1.25rem;
 }
 
 .bio h2{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bolder;
     color: #b84b61;
 }
@@ -237,33 +237,37 @@ button:hover {
 .skillset {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    color:#4dbfa6;
+    color: #4dbfa6;
+    width: 80%; /* Set a fixed width for better alignment */
+    margin: 0 auto; /* Center the skillset container */
 }
 
-.skillset-row{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.skillset-row {
+    display: flex;
+    justify-content: space-evenly; /* Evenly distribute items within the row */
+    width: 100%; /* Make sure the row takes up the full width of the container */
+    margin: 0.625rem 0; /* Add some vertical spacing between rows */
 }
 
-.skillset-row h3{
-    font-weight: 30px;
-    color:#4dbfa6;
+.skillset-row h3 {
+    font-weight: 1.875rem;
+    color: #4dbfa6;
 }
+
 
 .arrow {
     display: flex; /* Make the span an inline-block element */
     position: absolute;
     left: 50%;
-    bottom: 35px;
+    bottom: 2.1875rem;
     width: 3rem;
     height: 3rem;
     border-left: 0.5rem solid #fff;
     border-bottom: 0.5rem solid #fff;
     transform: rotate(315deg); /* Adjust the rotation to create a down-pointing arrow */
-    margin-top: 100px; /* Add some margin for spacing */
+    margin-top: 6.25rem; /* Add some margin for spacing */
     animation: bounce 2s infinite;
 }
 @keyframes bounce {
@@ -271,16 +275,16 @@ button:hover {
         transform: translateX(-50%) translateY(0) rotate(315deg); /* Start and end position */
     }
     40% {
-        transform: translateX(-50%) translateY(-20px) rotate(315deg); /* Bounce up */
+        transform: translateX(-50%) translateY(-1.25rem) rotate(315deg); /* Bounce up */
     }
     60% {
-        transform: translateX(-50%) translateY(-10px) rotate(315deg); /* Bounce slightly lower */
+        transform: translateX(-50%) translateY(-0.625rem) rotate(315deg); /* Bounce slightly lower */
     }
 }
 
 .hidden {
     opacity: 0;
-    filter:blur(2px);
+    filter:blur(0.125rem);
     transform: translateX(-50%);
     transition: all 2s;
 }
@@ -319,10 +323,10 @@ button:hover {
 
 @keyframes shift {
     0% {
-        transform: translateX(10px) translateY(10px);
+        transform: translateX(0.625rem) translateY(0.625rem);
     }
     100% {
-        transform: translateX(-10px) translateY(-10px); 
+        transform: translateX(-0.625rem) translateY(-0.625rem); 
     }
 }
 
@@ -341,5 +345,17 @@ button:hover {
 }
 
 .pfp:hover{
+    transform: scale(90%);
+}
+
+.pfpSmall{
+    position: relative;
+    border-radius: 50%;
+    height: 12.5rem;
+    width: 12.5rem;
+
+}
+
+.pfpSmall:hover{
     transform: scale(90%);
 }
