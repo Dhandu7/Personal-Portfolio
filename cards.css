@@ -63,10 +63,10 @@
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    height: 80px;
-    width: 520px;
+    height: 5rem;
+    width: 32.5rem;
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(1.875rem);
     transition-delay: .3s;
     transition: all .3s ease;
 }
@@ -75,6 +75,10 @@
     color: #b0b0b0;
     padding-top: 5px;
     padding-bottom:5px;
+}
+
+.description h2 {
+    font-size: 2rem;
 }
 
 .description h4 {

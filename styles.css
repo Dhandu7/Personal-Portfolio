@@ -359,3 +359,11 @@ button:hover {
 .pfpSmall:hover{
     transform: scale(90%);
 }
+
+.leftside{
+    flex-direction: column;
+}
+
+.rightside{
+    flex-direction: row;
+}
