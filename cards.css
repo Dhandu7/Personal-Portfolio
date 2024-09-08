@@ -9,6 +9,26 @@
     font-family: "Poppins",sans-serif;
 }
 
+.tech-stack {
+    background-color: #b84b61; /* Dark background for the tech stack section */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 0 .75rem .75rem; /* Rounded bottom corners */
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input:checked + label .tech-stack {
+    opacity: 1; /* Show tech stack when card is open */
+}
+
 .wrappercard{
     width: 100%;
     height: 100vh;
@@ -143,6 +163,74 @@ input:checked + label .description {
 
 }
 
+@media (max-width: 576px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .card > .row > .description {
+        width: 100%;
+    }
+
+    .card button {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.875rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .container2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .card {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .card > .row > .description {
+        width: 100%;
+    }
+
+    .card button {
+        width: 2.75rem;
+        height: 2.75rem;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .container2 {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 400px;
+    }
+
+    .card {
+        width: 80px;
+        margin: 0 10px;
+    }
+
+    .card > .row > .description {
+        width: 32.5rem;
+    }
+
+    .card button {
+        width: 3.125rem;
+        height: 3.125rem;
+        font-size: 2.625rem;
+    }
+}
 
   
   
