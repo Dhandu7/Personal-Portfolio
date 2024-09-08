@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaryan Dhand</title>
+    <link rel="icon" type="image/x-icon" href="/images/pfp.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="contact.css">
@@ -111,21 +112,9 @@
                     </label>
                     <input type="radio" name="slide" id="c2" >
                     <label for="c2" class="card">
-                        <div class="tech-stack">C++, PrusaSlicer, Arduino</div> <!-- New tech stack section -->
-                        <div class="row">
-                            <div class="icon">2</div>
-                            <div class="description">
-                                <h2>RETRO GAMES CONSOLE</h2>
-                                <p>Arduino controlle pong game console</p>
-                            </div>
-                        </div>
-                        <button onclick="window.location.href='card1.html'" class="image-glow"><i class="fab fa-github"></i></button>
-                    </label>
-                    <input type="radio" name="slide" id="c3" >
-                    <label for="c3" class="card">
                         <div class="tech-stack">Python, Pygame</div> <!-- New tech stack section -->
                         <div class="row">
-                            <div class="icon">3</div>
+                            <div class="icon">2</div>
                             <div class="description">
                                 <h2>SORTING ALGORITHM VISUALIZER</h2>
                                 <p>Python application used to visualize different sorting algorithms</p>
@@ -133,11 +122,11 @@
                         </div>
                         <button onclick="window.location.href='https://github.com/Dhandu7/Sorting-Algorithm-Visualizer'" class="image-glow"><i class="fab fa-github"></i></button>
                     </label>
-                    <input type="radio" name="slide" id="c4" checked>
-                    <label for="c4" class="card">
+                    <input type="radio" name="slide" id="c3" checked>
+                    <label for="c3" class="card">
                         <div class="tech-stack">Java, SQL</div> <!-- New tech stack section -->
                         <div class="row">
-                            <div class="icon">4</div>
+                            <div class="icon">3</div>
                             <div class="description">
                                 <h2>DISASTER RELIEF SYSTEM</h2>
                                 <p>Java & SQL disaster victim management system</p>
@@ -145,11 +134,11 @@
                         </div>
                         <button onclick="window.location.href='https://github.com/Dhandu7/Disaster-Relief-System'" class="image-glow"><i class="fab fa-github"></i></button>
                     </label>
-                    <input type="radio" name="slide" id="c5" checked>
-                    <label for="c5" class="card">
+                    <input type="radio" name="slide" id="c4" checked>
+                    <label for="c4" class="card">
                         <div class="tech-stack">Python, SQL</div> <!-- New tech stack section -->
                         <div class="row">
-                            <div class="icon">5</div>
+                            <div class="icon">4</div>
                             <div class="description">
                                 <h2>MUSEUM DATABASE</h2>
                                 <p>SQL & Python museum database management system</p>
@@ -157,12 +146,40 @@
                         </div>
                         <button onclick="window.location.href='https://github.com/ENSF-300-F23/museum-project-l01-17'" class="image-glow"><i class="fab fa-github"></i></button>
                     </label>
+                    <input type="radio" name="slide" id="c5" >
+                    <label for="c5" class="card">
+                        <div class="tech-stack">C++, PrusaSlicer, Arduino</div> <!-- New tech stack section -->
+                        <div class="row">
+                            <div class="icon">5</div>
+                            <div class="description">
+                                <h2>RETRO GAMES CONSOLE</h2>
+                                <p>Arduino controlled pong game console</p>
+                            </div>
+                        </div>
+                        <a href="images/Console Logbook.pdf" download>
+                            <button class="image-glow"><i class="fa fa-download"></i></button>
+                        </a>
+                    </label>
+                    <input type="radio" name="slide" id="c6" >
+                    <label for="c6" class="card">
+                        <div class="tech-stack">C++, PrusaSlicer, Arduino</div> <!-- New tech stack section -->
+                        <div class="row">
+                            <div class="icon">6</div>
+                            <div class="description">
+                                <h2>MINI INDOOR GARDEN</h2>
+                                <p>Arduino controlled dynamic indoor garden system</p>
+                            </div>
+                        </div>
+                        <a href="images/Indoor Garden Logbook.pdf" download>
+                            <button class="image-glow"><i class="fa fa-download"></i></button>
+                        </a>
+                    </label>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="four">
-            <div class="contact-container">
+            <div class="contact-container hidden">
                 <h1>Contact Me at: <div ><a style="color: #b84b61;" href="mailto:aaryandhandbusiness@gmail.com">aaryandhandbusiness@gmail.com</a></div></h1>
                 <div class="form-container">
                     <form id="contact-form">
@@ -179,7 +196,7 @@
                             <textarea id="message" name="message" required></textarea><br>
                         </div>
                         <div class="form-item">
-                            <button type="submit" onclick="sendMail()" value="submit" class="form-button">Send</button>
+                            <button type="submit" onclick="sendMail()" value="submit" class="form-button">Submit</button>
                         </div>
                     </form>
                 </div>

@@ -409,3 +409,28 @@ input:focus, textarea:focus {
     transform: scale(102%);
 }
 
+@media(max-width:480px) {
+    .links {
+        height: 8%;
+        justify-content: space-evenly;
+    }
+    .links a{
+        font-size: 0.9rem;
+    }
+    .one{
+        flex-direction: column;
+    }
+    .pfp{
+        height: 10.9375rem;
+        width: 10.9375rem;
+    }
+    .dynamic-txts{
+        display: none;
+    }
+    .pfpSmall{
+        display: none;
+    }
+    .contact-container{
+        font-size: 0.75rem;
+    }
+}
