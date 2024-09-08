@@ -136,7 +136,6 @@ h1{
 
 button {
     border: none;
-    position: fixed;
     background: none; /* Set background to none or transparent */
     color: #fff; /* Set text color to white */
     top: 3.125rem;
@@ -312,24 +311,6 @@ button:hover {
     margin: 0.625rem;
 }
 
-.fuzzy-overlay {
-    position: absolute;
-    background-image: url('./images/noise1.png');
-    z-index: 5;
-    opacity:15%;
-
-    animation: shift 0.2s linear infinite both;
-}
-
-@keyframes shift {
-    0% {
-        transform: translateX(0.625rem) translateY(0.625rem);
-    }
-    100% {
-        transform: translateX(-0.625rem) translateY(-0.625rem); 
-    }
-}
-
 .image-glow{
     box-shadow: 0 0 25px #4dbfa6;
     border-radius: 50%;
@@ -360,10 +341,70 @@ button:hover {
     transform: scale(90%);
 }
 
-.leftside{
+.contact-container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #303338;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    width: 80%;
+    margin: auto;
 }
 
-.rightside{
-    flex-direction: row;
+.form-container {
+    width: 100%;
+    align-items: left;
+}
+
+.form-item { 
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+}
+
+.form-item input{
+    display:flex;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #42464D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #4dbfa6;
+}
+
+.form-button{
+    font-size: 1rem;
+    background-color: #4dbfa6;
+    color: #fff;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    width: 100%; /* Make the button full-width */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    transform: scale(102%);
 }

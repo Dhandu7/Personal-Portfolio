@@ -6,8 +6,9 @@
     <title>Aaryan Dhand</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    
 </head>
 <body>
     <div class="links">
@@ -102,7 +103,7 @@
                             <div class="icon">1</div>
                             <div class="description">
                                 <h2>DRIVE AWAKE</h2>
-                                <p>EOG tracking device for truck drivers to reduce road indcidents</p>
+                                <p>EOG tracking device for truck drivers to reduce road incidents</p>
                             </div>
                         </div>
                         <button onclick="window.location.href='https://github.com/debodam/nathacks2023'" class="image-glow"><i class="fab fa-github"></i></button>
@@ -156,24 +157,42 @@
         </section>
 
         <section id="contact" class="four">
-            <div class="aboutme hidden">
-                <div class="leftside">
-                    <h1>Feel free to contact me!</h1>
-                    <ul>
-                        <li>Email: <a href="mailto:aaryandhandbusiness@gmail.com">aaryandhandbusiness@gmail.com</a></li>
-                        <li>Phone: <a href="tel:5874320901">587-432-0901</a></li>
-                    </ul>
-                </div>   
-                <div class="rightside>">
-
-                </div>             
+            <div class="contact-container">
+                <h1>Contact Me at: <div ><a style="color: #b84b61;" href="mailto:aaryandhandbusiness@gmail.com">aaryandhandbusiness@gmail.com</a></div></h1>
+                <div class="form-container">
+                    <form id="contact-form">
+                        <div class="form-item">
+                            <label for="fname">Name:</label>
+                            <input type="text" id="fname" name="fname" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-item">
+                            <label>Message:</label>
+                            <textarea id="message" name="message" required></textarea><br>
+                        </div>
+                        <div class="form-item">
+                            <button type="submit" onclick="sendMail()" value="submit" class="form-button">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
         
-        
-
-        
     </div>
     <script src="js/script.js"></script>
+    <script src="js/email.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "Uj4zUtkT4EbmyofMx",
+    });
+    })();
+    </script>   
 </body>
 </html>

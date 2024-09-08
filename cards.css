@@ -63,7 +63,7 @@
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    height: 5rem;
+    height: 7rem;
     width: 32.5rem;
     opacity: 0;
     transform: translateY(1.875rem);
@@ -78,7 +78,7 @@
 }
 
 .description h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .description h4 {
