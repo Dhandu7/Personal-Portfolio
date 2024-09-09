@@ -164,6 +164,11 @@ button:hover {
     z-index: 3;
 }
 
+.links img{
+    width: 3rem;
+    height: 2.5rem;
+}
+
 .links a {
     margin-left: 0.9375rem; /* Same left margin as the Menu button */
     padding: 0.3125rem; /* Same padding as the Menu button */
