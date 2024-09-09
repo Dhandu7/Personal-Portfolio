@@ -9,6 +9,29 @@
     font-family: "Poppins",sans-serif;
 }
 
+.three {
+    padding-top: 50px; /* Add space at the top */
+}
+
+#projects h1 {
+    font-size: 3.5rem;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin-left: 3rem;
+}
+
+#projects h1 a{
+    font-size: 3.75rem;
+    color:#b84b61;
+    font-weight:900;
+}
+
+#projects h1:hover {
+    color: #4dbfa6;
+    transform: scale(90%);
+}
+
 .tech-stack {
     background-color: #b84b61; /* Dark background for the tech stack section */
     color: white;
