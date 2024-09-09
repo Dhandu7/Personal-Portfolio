@@ -11,10 +11,13 @@
 
 .three {
     padding-top: 50px; /* Add space at the top */
+    flex-direction: column;
 }
-
+.title{
+    margin-bottom: 2rem;
+}
 #projects h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     position: relative;
     z-index: 3;
     text-align: center;
@@ -22,7 +25,7 @@
 }
 
 #projects h1 a{
-    font-size: 3.75rem;
+    font-size: 3.5rem;
     color:#b84b61;
     font-weight:900;
 }
@@ -30,6 +33,10 @@
 #projects h1:hover {
     color: #4dbfa6;
     transform: scale(90%);
+}
+.title h2{
+    color: #4dbfa6;
+    margin-left: 3rem;
 }
 
 .tech-stack {
@@ -54,7 +61,7 @@ input:checked + label .tech-stack {
 
 .wrappercard{
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +168,8 @@ input:checked + label .description {
     background-image: url(./images/30171280.drawio\ \(1\).png);
     border: 5px solid #303338;
     padding: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
 }
 
 .card[for="c4"]{
@@ -214,28 +223,71 @@ input:checked + label .description {
 }
 
 
-@media(max-width:480px) {
-    .card{
-        width: 5rem;
+@media (max-width: 480px) {
+    .three {
+        flex-direction: column;
     }
-    .card >.row >.description{
-        height: 3rem;
-        
+    .wrappercard{
+        height: 50vh;
     }
-    .description h2{
-        font-size: 1.7rem;
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 10rem;
+        margin: 10px 0;
+    }
+    .card[for="c1"],
+    .card[for="c2"],
+    .card[for="c3"],
+    .card[for="c4"],
+    .card[for="c5"],
+    .card[for="c6"] {
+        background-image: none;
+    }
+
+    input:checked + label {
+        width: 20rem;
+        height: 200rem;
+    }
+
+    .card >.row >.description {
+        width: 100%;
+        height: 5rem;
+    }
+    .card >.row .icon{
+        font-size: 1rem;
     }
     .description p{
-        display: none;
+        font-size: 0.75rem;
     }
+    .description h2{
+        font-size: 1rem;
+    }
+    
     .tech-stack{
-        display: flex;
-        justify-content: right;
+        font-size: 0.5rem;
     }
-    .card button{
-        justify-content: right;
-        align-items:end;
-        width: 1rem;
-        height: 1rem;
+    .card button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        left:10px
+    }
+
+
+    #projects h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        padding: 2rem;
+    }
+
+    #projects h1 a {
+        font-size: 2.5rem;
+    }
+    #projects h2{
+        font-size: 1rem;
     }
 }

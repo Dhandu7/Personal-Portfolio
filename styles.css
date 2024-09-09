@@ -161,12 +161,12 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3;
+    z-index: 4;
 }
 
 .links img{
     width: 3rem;
-    height: 2.5rem;
+    height: 3rem;
 }
 
 .links a {
@@ -204,7 +204,10 @@ button:hover {
 .cvButton:hover {
     transform: scale(110%);
 }
-
+.button-box{
+    display: flex;
+    flex-direction: row; 
+}
 .avatar{
     padding: 0.625rem;
 }
@@ -415,27 +418,65 @@ input:focus, textarea:focus {
 }
 
 @media(max-width:480px) {
+
+    .container{
+        scroll-snap-type:none;
+    }
     .links {
         height: 8%;
         justify-content: space-evenly;
     }
     .links a{
-        font-size: 0.9rem;
+        font-size: 0.5rem;
+    }
+    .links img{
+        height: 0.5;
+        width: 2rem;
+        height: 2rem;
     }
     .one{
         flex-direction: column;
     }
+    .wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper .static-txt{
+        font-size: 1.5rem;
+    }
+    .wrapper .dynamic-txts{
+        font-size: 1.5rem;
+    }
+    .dynamic-txts li{
+        font-size: 1.5rem;
+    }
     .pfp{
         height: 10.9375rem;
         width: 10.9375rem;
-    }
-    .dynamic-txts{
-        display: none;
+        margin-bottom: 1rem;
     }
     .pfpSmall{
         display: none;
     }
+    .button-box{
+        flex-direction: column;
+    }
     .contact-container{
         font-size: 0.75rem;
+    }
+    .aboutme h1{
+        font-size: 2rem;
+    }
+    .bio h2{
+        font-size: 1.5rem;
+    }
+    .bio p{
+        font-size: 1rem;
+    }
+    .skillset h3{
+        font-size: 1rem;
+    }
+    .contact-container h1{
+        font-size: 1rem;
     }
 }
