@@ -226,7 +226,7 @@ input:checked + label .description {
 }
 
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width:767px) {
     .three {
         flex-direction: column;
     }
@@ -292,5 +292,120 @@ input:checked + label .description {
     }
     #projects h2{
         font-size: 1rem;
+    }
+}
+@media (min-width: 768px) and (max-width:997px) {
+    .three {
+        flex-direction: column;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 30rem;
+        margin: 10px 0;
+    }
+    .card[for="c1"],
+    .card[for="c2"],
+    .card[for="c3"],
+    .card[for="c4"],
+    .card[for="c5"],
+    .card[for="c6"] {
+        background-image: none;
+    }
+
+    input:checked + label {
+        width: 30rem;
+        height: 20000px;
+    }
+
+    .card >.row >.description {
+        width: 100%;
+        height: 5rem;
+    }
+    .card >.row .icon{
+        font-size: 1rem;
+    }
+    .description p{
+        font-size: 1rem;
+    }
+    .description h2{
+        font-size: 1.5rem;
+    }
+    
+    .tech-stack{
+        font-size: 0.75rem;
+    }
+    .card button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        left:10px
+    }
+
+
+    #projects h1 {
+        font-size: 1.875rem;
+        margin-left: 0;
+        padding: 2rem;
+    }
+
+    #projects h1 a {
+        font-size: 2.5rem;
+    }
+    #projects h2{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width:998px) and (max-width: 1306px) {
+    .wrappercard{
+        height: 50vh;
+    }
+    .card {
+        width: 3rem;
+    }
+
+    input:checked + label {
+        width: 40rem;
+    }
+
+    .card >.row >.description {
+        width: 100%;
+    }
+    .card >.row .icon{
+        font-size: 1.5rem;
+    }
+    .description p{
+        font-size: 1.5rem;
+    }
+    .description h2{
+        font-size: 3rem;
+    }
+    
+    .tech-stack{
+        font-size: 1rem;
+    }
+    .card button {
+        width: 3rem;
+        height: 3rem;
+        font-size: 2.5rem;
+        left:10px
+    }
+
+
+    #projects h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        padding: 2rem;
+    }
+
+    #projects h1 a {
+        font-size: 2.5rem;
+    }
+    #projects h2{
+    font-size: 2rem;
     }
 }

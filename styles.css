@@ -417,7 +417,7 @@ input:focus, textarea:focus {
     transform: scale(102%);
 }
 
-@media(max-width:480px) {
+@media(min-width:320px) and (max-width:767px) {
 
     .container{
         scroll-snap-type:none;
@@ -478,5 +478,63 @@ input:focus, textarea:focus {
     }
     .contact-container h1{
         font-size: 1rem;
+    }
+}
+@media (min-width: 768px) and (max-width:1024px) {
+    .container{
+        scroll-snap-type:none;
+    }
+
+    .one{
+        flex-direction: column;
+    }
+    .wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper .static-txt{
+        font-size: 3rem;
+    }
+    .wrapper .dynamic-txts{
+        font-size: 3rem;
+    }
+    .dynamic-txts li{
+        font-size: 3rem;
+    }
+    .pfp{
+        height: 15rem;
+        width: 15rem;
+        margin-bottom: 1rem;
+    }
+    .pfpSmall{
+        display: none;
+    }
+    .button-box{
+        margin-left: 7rem;
+        flex-direction: column;
+    }
+    .contact-container{
+        font-size: 0.75rem;
+    }
+    .aboutme h1{
+        font-size: 2rem;
+    }
+    .bio h2{
+        font-size: 1.5rem;
+    }
+    .bio p{
+        font-size: 1rem;
+    }
+    .skillset h3{
+        font-size: 1rem;
+    }
+    .contact-container h1{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container{
+        scroll-snap-type:none;
     }
 }
